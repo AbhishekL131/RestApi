@@ -3,7 +3,9 @@ package com.example.demo.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "users") // MongoDB collection
+
+// user model for data storage in mongodb
+@Document(collection = "users") 
 public class User {
 
     @Id
@@ -11,7 +13,7 @@ public class User {
     private String name;
     private String email;
 
-    // Constructors
+    
     public User() {}
 
     public User(String name, String email) {

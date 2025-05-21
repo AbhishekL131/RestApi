@@ -34,8 +34,10 @@ public class UserService {
         }).orElse(null);
     }
 
+    
+
     public String deleteUser(String id) {
         userRepository.deleteById(id);
-        return id + " deleted";
+        return id;
     }
 }
